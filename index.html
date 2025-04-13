@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hannah's Code & Creativity</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Navbar Wrapper -->
+    <nav class="bg-white shadow-md p-4 fixed top-0 left-0 w-full z-50">
+
+        <header>
+            <h1><strong>Hannah's Code & Creativity</strong></h1>
+            <h5>Developer | Designer | Dreamer</h5>
+        </header>
+
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="#home" class="text-xl font-bold hover:text-cyan-600 transition duration-300">
+                Hannah's Portfolio
+            </a>
+
+
+
+
+            <!-- Hamburger Button -->
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                     viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-600">About</a></li>
+                <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 px-4">
+            <ul class="flex flex-col space-y-3">
+                <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-600">About</a></li>
+                <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Main Content with Proper Spacing -->
+    <main class="pt-32 px-4 md:px-16 bg-gray-50 min-h-screen">
+        <section id="home" class="relative bg-cover bg-center h-[60vh] flex items-center justify-center text-center" style="background-image: url('images/tech.jpg');">
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 text-white">
+                <h2 class="text-4xl font-bold">Hi, I'm Hannah</h2>
+                <p class="text-xl mt-4">I build beautiful, functional digital experiences.</p>
+                <a href="#projects" class="mt-8 inline-block px-6 py-3 bg-cyan-500 hover:text-blue-600  font-semibold rounded hover:bg-cyan-600">View My Projects</a>
+            </div>
+
+        </section>
+
+
+        <section id="about" class="pt-8 px-4 md:px-16">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-cyan-500 after:mx-auto after:mt-2" data-aos="fade-up">
+                About Me
+            </h2>
+
+
+            <p class="text-gray-600 leading-relaxed">
+                "I'm Hannah, a passionate developer and designer driven by a love for innovation and creativity.
+                My journey began with an insatiable curiosity for technology, which has evolved into a career dedicated to
+                crafting engaging and robust digital experiences. Whether I'm building responsive websites or developing custom applications,
+                I blend analytical problem-solving with artistic design to create solutions that are as beautiful as they are functional.
+                I believe every project is a chance to push boundaries and learn something new,
+                and I'm always excited to take on challenges that inspire growth and spark change."
+            </p>
+        </section>
+    </main>
+   
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-cyan-800 mb-8">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Personal Portfolio Website -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Personal Portfolio Website</h3>
+                    <p class="text-gray-600 mb-4">
+                        A fully responsive personal website built with HTML, CSS, and JavaScript. It showcases my bio, skills, and contact information.
+                    </p>
+                    <p class="text-sm text-gray-500">
+                        <strong>Tech Stack:</strong> HTML, CSS, JavaScript developed in VB.NET
+                    </p>
+                </div>
+
+                <!-- Online Booking System -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Online Booking System</h3>
+                    <!-- Additional images for the project -->
+                    <div class="grid grid-cols-2 gap-2 mb-4">
+                        <img src="images/booking.png" alt="Screenshot of Booking System" class="rounded">
+                        <img src="images/bookings.png" alt="Booking System" class="rounded">
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        A web application that allows users to book appointments for a salon with real-time availability. The system is deployed online for easy access.
+                    </p>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <strong>Tech Stack:</strong> HTML, CSS, JavaScript
+                    </p>
+                    <p class="text-sm text-cyan-600 font-medium">
+                        <strong>View the live project:</strong>
+                        <a href="https://hannah24-create.github.io/Cosmetic_salon-website/" target="_blank" class="underline hover:text-cyan-800">Online Booking System</a>
+                    </p>
+                </div>
+
+                <!-- School Management System -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">School Management System</h3>
+                    <p class="text-gray-600 mb-4">
+                        A desktop application developed to help schools efficiently manage student information, staff records, subjects, and class schedules. It includes features like student registration, attendance tracking, and grade management.
+                    </p>
+                    <p class="text-sm text-gray-500">
+                        <strong>Tech Stack:</strong> Python, Django, MySQL
+                    </p>
+                </div>
+
+                <!-- AES Encryption/Decryption App -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">AES Encryption/Decryption App</h3>
+                    <p class="text-gray-600 mb-4">
+                        A Windows-based application developed in VB.NET that allows users to securely encrypt and decrypt any kind of text using the AES encryption algorithm. It features a clean and simple interface for fast and secure data handling.
+                    </p>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <strong>Tech Stack:</strong> VB.NET, AES Cryptography
+                    </p>
+                    <p class="text-sm text-cyan-600 font-medium">
+                        View or download the code on
+                        <a href="https://github.com/Hannah24-create/App-for-encryption-decryption.git" target="_blank" class="underline hover:text-cyan-800">GitHub</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="bg-white shadow-lg rounded-lg p-6 hover:scale-105 transition-transform duration-300">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+            <!-- Programming Languages -->
+            <div class="bg-white shadow-lg rounded-lg p-6 hover:scale-105 hover:animate-bounce transition-transform duration-300">
+                <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">💻 Programming Languages</h3>
+                <ul class="space-y-2">
+                    <li>Python <div class="bg-gray-200 h-2 rounded"><div class="bg-black h-2 rounded w-4/5"></div></div></li>
+                    <li>JavaScript <div class="bg-gray-200 h-2 rounded"><div class="bg-black h-2 rounded w-3/4"></div></div></li>
+                    <li>C# <div class="bg-gray-200 h-2 rounded"><div class="bg-black h-2 rounded w-3/5"></div></div></li>
+                    <li>Java <div class="bg-gray-200 h-2 rounded"><div class="bg-black h-2 rounded w-3/5"></div></div></li>
+                </ul>
+            </div>
+
+            <!-- Web Development -->
+            <div class="bg-white shadow-lg rounded-lg p-6 hover:scale-105 hover:animate-bounce transition-transform duration-300">
+                <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">🌐 Web Development</h3>
+                <ul class="space-y-2">
+                    <li>Django <div class="bg-gray-200 h-2 rounded"><div class="bg-black h-2 rounded w-4/5"></div></div></li>
+                    <li>React <div class="bg-gray-200 h-2 rounded"><div class="bg-black h-2 rounded w-3/4"></div></div></li>
+                    <li>Next.js <div class="bg-gray-200 h-2 rounded"><div class="bg-black h-2 rounded w-3/5"></div></div></li>
+                    <li>Tailwind CSS <div class="bg-gray-200 h-2 rounded"><div class="bg-black h-2 rounded w-3/4"></div></div></li>
+                </ul>
+            </div>
+
+            <!-- Databases -->
+            <div class="bg-white shadow-lg rounded-lg p-6 hover:scale-105 hover:animate-bounce transition-transform duration-300">
+                <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">🗄️ Databases</h3>
+                <ul class="space-y-2">
+                    <li>MySQL <div class="bg-gray-200 h-2 rounded"><div class="bg-black h-2 rounded w-4/5"></div></div></li>
+                    <li>PostgreSQL <div class="bg-gray-200 h-2 rounded"><div class="bg-black h-2 rounded w-2/3"></div></div></li>
+                    <li>MongoDB <div class="bg-gray-200 h-2 rounded"><div class="bg-black h-2 rounded w-1/2"></div></div></li>
+                    <li>SQLite <div class="bg-gray-200 h-2 rounded"><div class="bg-black h-2 rounded w-3/4"></div></div></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <section class="mt-20">
+        <div id="contact">
+            <h2>Contact Information</h2>
+            <p>Feel free to reach out through any of these channels</p>
+
+            <div class="info-item">
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+                <div>
+                    <p class="label">Email</p>
+                    <p><a href="mailto:hannelodoi@gmail.com">hannelodoi@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <span class="icon"><i class="fas fa-phone"></i></span>
+                <div>
+                    <p class="label">Phone</p>
+                    <p><a href="tel:+233559912316">+233 559 912 316</a></p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                <div>
+                    <p class="label">Location</p>
+                    <p>Accra, Ghana</p>
+                </div>
+            </div>
+
+            <!-- Connect Section -->
+            <div class="connect-section " pb-32">
+                <h3>Connect with me</h3>
+                <div class="social-links">
+                    <a href="https://github.com/Hannah24-create" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/hannah-odoi-166624334?lipi" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:hannelodoi@gmail.com?subject=Portfolio Inquiry" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="availability-box">
+                <strong>Availability</strong>
+                <p>I'm currently available for freelance work and full-time positions. My typical response time is within 24 hours.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" style="margin-top: 40px;">
+        <h2>Send a Message</h2>
+        <p>I'll get back to you as soon as possible</p>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your email address" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="What is this regarding?" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+
+            <button type="submit">Send Message ✈️</button>
+        </form>
+    </section>
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-10 mt-20">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+            <!-- Copyright -->
+            <div style="margin-top:20px;">
+                <h3 class="font-semibold mb-2">© 2025 Copyrights</h3>
+                <p>All rights reserved. Hannah's Code & Creativity.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="font-semibold mb-2">Quick Links</h3>
+                <ul class="space-y-1">
+                    <li><a href="#home" class="hover:underline">Home</a></li>
+                    <li><a href="#projects" class="hover:underline">Projects</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="font-semibold mb-2">Contact</h3>
+                <a href="mailto:hannelodoi@gmail.com?subject=Portfolio Inquiry" title="Email"><i class="fas fa-envelope"></i></a>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+    </footer>
+
+    <button onclick="scrollToTop()" id="backToTopBtn" style="display: none; position: fixed; bottom: 30px; right: 30px; z-index: 1000; background-color: black; color: white; border: none; padding: 10px 15px; border-radius: 50%;">↑</button>
+
+
+    <script>
+        // Show the button when you scroll down
+        window.onscroll = function () {
+            let btn = document.getElementById("backToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        // Scroll back to top smoothly
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        toggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+
+
+    <!-- Theme Toggle Script -->
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+        });
+    </script>
+
+</body>
+
+</html>
